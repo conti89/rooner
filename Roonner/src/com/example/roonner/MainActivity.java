@@ -2,7 +2,11 @@ package com.example.roonner;
 
 import android.os.Bundle;
 import android.app.Activity;
+import android.content.Intent;
 import android.view.Menu;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.Button;
 
 public class MainActivity extends Activity {
 
@@ -10,6 +14,16 @@ public class MainActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
+		Button how_long = (Button)findViewById(R.id.how_long);
+		how_long.setOnClickListener(new OnClickListener(){
+
+			@Override
+			public void onClick(View v) {
+				// TODO Auto-generated method stub
+				Intent nextIntent = new Intent(getBaseContext(),Hours.class);
+				startActivityForResult(nextIntent, 0);
+				
+			}});
 	}
 
 	@Override

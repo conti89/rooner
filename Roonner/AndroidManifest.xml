@@ -22,6 +22,26 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name="com.example.roonner.Buddies" >
+        </activity>
+        <activity android:name="com.example.roonner.Profile" >
+        </activity>
+        <activity android:name="com.example.roonner.PersonalResults" >
+        </activity>
+        <activity android:name="com.example.roonner.FriendResults" >
+        </activity>
+        <activity android:name="com.example.roonner.Hours" >
+        </activity>
+        <activity android:name="com.example.roonner.Miles" >
+        </activity>
+        <activity android:name="com.example.roonner.ListBuddies" >
+        </activity>
+        <activity android:name="com.example.roonner.Run" >
+        </activity>
+        <activity android:name="com.example.roonner.BuddyProfile" >
+        </activity>
+        <activity android:name="com.example.roonner.Music" >
+        </activity>
     </application>
 
 </manifest>

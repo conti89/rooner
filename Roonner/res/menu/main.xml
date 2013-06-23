@@ -9,6 +9,8 @@
     android:id="@+id/settings"
     android:title="@string/settings"
     android:icon="@android:drawable/ic_menu_preferences"
+    android:showAsAction="always"
+    android:visible="true"
         />
     
 
