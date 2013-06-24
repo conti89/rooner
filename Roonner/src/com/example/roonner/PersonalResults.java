@@ -4,6 +4,9 @@ import android.os.Bundle;
 import android.app.Activity;
 import android.content.Intent;
 import android.view.Menu;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.Button;
 import android.widget.TextView;
 
 public class PersonalResults extends Activity {
@@ -12,6 +15,16 @@ public class PersonalResults extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.personal_results);
+		Button personalResults_friendResults = (Button)findViewById(R.id.personalResults_friendResults);
+		personalResults_friendResults.setOnClickListener(new OnClickListener(){
+
+			@Override
+			public void onClick(View v) {
+				// TODO Auto-generated method stub
+				Intent nextIntent = new Intent(getBaseContext(),FriendResults.class);
+				startActivityForResult(nextIntent, 0);
+				
+			}});
 	
 	}
 
