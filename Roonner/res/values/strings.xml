@@ -3,13 +3,19 @@
 
     <string name="app_name">Roonner</string>
     <string name="action_settings">Settings</string>
-    <string name="hello_world">Hello world!</string>
     <string name="settings">Settings</string>
-    
+    <string name="ok">OK, let\'s do this!</string>
     
     <!-- Inicio -->
 	<string name="welcome">Welcome to Roonner Universe Dear John Smith</string>
 	<string name="how_much">How much do you want to run?</string>
 	<string name="how_long">How long do you want to run?</string>
 	<string name="or">or</string>
+	
+	<!-- Buddies -->
+	<string name="new_roonner">Find a new Roonner</string>
+	<string name="my_buddies">My Buddies</string>
+	<string name="options">Options</string>
+	<string name="roon">Want to Roon?</string>
+	<string name="next">Next please!</string>
 </resources>

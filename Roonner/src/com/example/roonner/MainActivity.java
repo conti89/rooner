@@ -24,6 +24,15 @@ public class MainActivity extends Activity {
 				startActivityForResult(nextIntent, 0);
 				
 			}});
+		Button how_much=(Button)findViewById(R.id.how_much);
+		how_much.setOnClickListener(new OnClickListener(){
+
+			@Override
+			public void onClick(View v) {
+				// TODO Auto-generated method stub
+				Intent nextIntent = new Intent(getBaseContext(),Miles.class);
+				startActivityForResult(nextIntent, 0);
+			}});
 	}
 
 	@Override

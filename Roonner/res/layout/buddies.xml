@@ -2,11 +2,33 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent" >
-    <TextView
-        android:id="@+id/nombre"
+
+    <Button
+        android:id="@+id/buddies_options"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:background="@color/verde_roonner"
+        android:text="@string/options" />
+
+    <Button
+        android:id="@+id/buddies_profile"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="hola"
-        ></TextView>
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="57dp"
+        android:background="@color/celeste_roonner"
+        android:text="@string/new_roonner" />
+
+    <Button
+        android:id="@+id/buddies_listBuddies"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:background="@color/celeste_roonner"
+        android:text="@string/my_buddies" />
 
 </RelativeLayout>
