@@ -11,6 +11,7 @@
 	<string name="how_much">How much do you want to run?</string>
 	<string name="how_long">How long do you want to run?</string>
 	<string name="or">or</string>
+
 	
 	<!-- Buddies -->
 	<string name="new_roonner">Find a new Roonner</string>
@@ -18,4 +19,11 @@
 	<string name="options">Options</string>
 	<string name="roon">Want to Roon?</string>
 	<string name="next">Next please!</string>
+
+	<string name="skip">Skip</string>
+	<string name="music">Music</string>
+	<string name="run">Run</string>
+	<string name="finish">Finish</string>
+	<string name="your_friends">Your Friends</string>
+
 </resources>

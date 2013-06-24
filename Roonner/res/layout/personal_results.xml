@@ -2,6 +2,119 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent" >
+
+    <Button
+        android:id="@+id/personalResults_friendResults"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="@color/celeste_roonner"
+        android:text="@string/your_friends" />
+
+    <QuickContactBadge
+        android:id="@+id/personal_results_pic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="22dp"
+        android:layout_marginTop="14dp" />
+
+  	<TextView
+        android:id="@+id/personal_results_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="Nombre Apellido" />
     
+  	    <TextView
+        android:id="@+id/personal_results_dur"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"        
+        android:layout_marginRight="20dp"
+        
+        android:text="01:21:53" />
+  	
+    <TextView
+        android:id="@+id/personal_results_cal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="27dp"
+        android:text="100 cal" />
+
+    <TextView
+        android:id="@+id/personal_results_dis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/personal_results_cal"
+        android:layout_alignBottom="@+id/personal_results_cal"
+        android:layout_toRightOf="@+id/personal_results_pic"
+        android:text="1942 mts" />
+
+    <TextView
+        android:id="@+id/personal_results_pac"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/personal_results_dis"
+        android:layout_alignRight="@+id/personal_results_dur_txt"
+        android:layout_marginBottom="51dp"
+        android:text="10 s/m" />
+
+    <TextView
+        android:id="@+id/personal_results_vel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/personal_results_dur_txt"
+        android:layout_marginTop="26dp"
+        android:layout_toRightOf="@+id/personal_results_dur"
+        android:text="10 m/s" />
+
+    <TextView
+        android:id="@+id/personal_results_cal_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/personal_results_vel"
+        android:layout_alignBottom="@+id/personal_results_vel"
+        android:layout_alignLeft="@+id/personal_results_name"
+        android:text="Calories" />
+
+    <TextView
+        android:id="@+id/personal_results_pac_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/personal_results_dur"
+        android:layout_marginTop="17dp"
+        android:layout_toRightOf="@+id/personal_results_pic"
+        android:text="Pace" />
+
+
+    <TextView
+        android:id="@+id/personal_results_dis_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/personal_results_spd_txt"
+        android:layout_toLeftOf="@+id/personal_results_spd_txt"
+        android:text="Distance" />
+
+    <TextView
+        android:id="@+id/personal_results_spd_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/personal_results_vel"
+        android:layout_below="@+id/personal_results_vel"
+        android:layout_marginTop="23dp"
+        android:text="Speed" />
+
+    <TextView
+        android:id="@+id/personal_results_dur_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/personal_results_pac"
+        android:layout_alignBottom="@+id/personal_results_pac"
+        android:layout_marginRight="20dp"
+        android:layout_toLeftOf="@+id/personal_results_dur_txt"
+        android:text="Duration" />
 
 </RelativeLayout>
