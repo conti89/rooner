@@ -61,8 +61,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
-        android:layout_below="@+id/profile_roon"
-        android:layout_marginTop="18dp"
+        android:layout_below="@+id/profile_music"
+        android:layout_marginTop="16dp"
         android:background="@color/celeste_roonner"
         android:text="@string/next" />
 
