@@ -40,6 +40,8 @@ private List<Map<String, String>> data = new ArrayList<Map<String, String>>();
 					long arg3) {
 				// TODO Auto-generated method stub
 				Intent nextIntent = new Intent(getBaseContext(),Music.class);
+				nextIntent.putExtra("name", data.get(arg2).get("name"));
+				nextIntent.putExtra("place",data.get(arg2).get("place"));
 				startActivityForResult(nextIntent,0);
 			}});
 		
