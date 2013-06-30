@@ -3,4 +3,6 @@
 	<!-- Rooner Colors -->
 	<color name="verde_roonner">#c7d367</color>
 	<color name="celeste_roonner">#75d0ed</color>
+	<color name="blanco_roonner">#d5e9d7</color>
+	<color name="blanco">#ffffff</color>	
 </resources>
