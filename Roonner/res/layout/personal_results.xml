@@ -2,14 +2,13 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent" >
-
     <QuickContactBadge
         android:id="@+id/personal_results_pic"
         android:layout_width="120dp"
         android:layout_height="120dp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:src="@drawable/usain" />
+        />
 
     <Button
         android:id="@+id/personalResults_friendResults"
@@ -71,29 +70,7 @@
         android:layout_marginTop="19dp"
         android:background="@color/verde_roonner"
         android:gravity="center"
-        android:text="Duration"
-        android:textSize="20sp" />
-
-    <TextView
-        android:id="@+id/personal_results_pac_txt"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_below="@+id/personal_results_dis"
-        android:layout_marginTop="29dp"
-        android:background="@color/verde_roonner"
-        android:text="        Pace"
-        android:textSize="20sp" />
-
-    <TextView
-        android:id="@+id/personal_results_cal_txt"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/personal_results_pac_txt"
-        android:layout_alignBottom="@+id/personal_results_pac_txt"
-        android:layout_alignLeft="@+id/personal_results_spd_txt"
-        android:background="@color/verde_roonner"
-        android:text="Calories"
+        android:text="Duration (Started at 5:39 PM)"
         android:textSize="20sp" />
 
     <TextView
@@ -105,32 +82,38 @@
         android:text="01:21:53" 
         android:textSize="20sp"/>
 
-    <TextView
-        android:id="@+id/personal_results_cal"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/personal_results_vel"
-        android:layout_below="@+id/personal_results_pac_txt"
-        android:text="100 cal"
-        android:textSize="20sp" />
 
-    <TextView
-        android:id="@+id/personal_results_pac"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/personal_results_cal"
-        android:layout_alignBottom="@+id/personal_results_cal"
-        android:layout_alignLeft="@+id/personal_results_dis"
-        android:text="10 s/m"
-        android:textSize="20sp" />
+    <ImageView
+        android:id="@+id/personal_map"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_above="@+id/personalResults_friendResults"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/map_cristobal" />
 
-    <TextView
-        android:id="@+id/personal_results_name"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_toRightOf="@+id/personal_results_pic"
-        android:text="Usain Bolt"
-        android:textSize="40sp" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@id/personal_results_pic"
+        android:layout_above="@id/personal_results_dur_txt">"
+
+        <TextView
+            android:id="@+id/personal_results_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+			android:layout_centerHorizontal="true"
+            android:text="Cristobal"
+            android:textSize="40sp" />
+
+        <TextView
+            android:id="@+id/personalResults_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/personal_results_name"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="Santiago,Chile \nCurrent Time: 6:15PM" />
+
+    </RelativeLayout>
 
 </RelativeLayout>
