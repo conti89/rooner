@@ -21,8 +21,8 @@
 
     <ImageView
         android:id="@+id/main_roonner"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
         android:layout_marginTop="101dp"
         android:layout_toLeftOf="@+id/welcome"
         android:src="@drawable/roon_icon" />
@@ -33,7 +33,6 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/main_roonner"
         android:layout_marginTop="47dp"
-        android:background="@color/verde_roonner"
         android:text="@string/how_much" />
 
     <Button
@@ -43,7 +42,6 @@
         android:layout_alignLeft="@+id/how_much"
         android:layout_below="@+id/Or"
         android:layout_marginTop="28dp"
-        android:background="@color/verde_roonner"
         android:text="@string/how_long" />
 
     <TextView
