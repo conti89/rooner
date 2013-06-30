@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent" >
+    android:layout_height="match_parent"
+    android:paddingTop="10dp" >
 
     <Button
         android:id="@+id/buddies_options"
@@ -13,22 +14,54 @@
         android:text="@string/options" />
 
     <Button
-        android:id="@+id/buddies_profile"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="57dp"
-        android:background="@color/celeste_roonner"
-        android:text="@string/new_roonner" />
-
-    <Button
         android:id="@+id/buddies_listBuddies"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_above="@+id/buddies_options"
         android:layout_alignParentLeft="true"
-        android:layout_centerVertical="true"
-        android:background="@color/celeste_roonner"
+        android:layout_marginBottom="110dp"
+        android:background="@color/verde_roonner"
         android:text="@string/my_buddies" />
+
+    <Button
+        android:id="@+id/buddies_profile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/buddies_listBuddies"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="38dp"
+        android:background="@color/verde_roonner"
+        android:text="@string/new_roonner" />
+
+    <Button
+        android:id="@+id/buddies_solo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/buddies_options"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="27dp"
+        android:background="@color/verde_roonner"
+        android:text="@string/solo" />
+
+    <TextView
+        android:id="@+id/buddies_roon_speech"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="27dp"
+        android:background="@drawable/bubble"
+        android:gravity="center"
+        android:text="@string/buddies_speech"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/buddies_roonner"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_above="@+id/buddies_profile"
+        android:layout_marginBottom="19dp"
+        android:layout_toLeftOf="@+id/buddies_roon_speech"
+        android:src="@drawable/roon_icon" />
 
 </RelativeLayout>

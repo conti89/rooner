@@ -2,68 +2,23 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent" >
+"
 
-    <QuickContactBadge
-        android:id="@+id/profile_pic"
-        android:layout_width="120dp"
-        android:layout_height="120dp"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="60dp"
-        android:src="@drawable/duran" />
+<ListView
+    android:id="@+id/list_roonners"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="50dp"
+   >
 
-    <TextView
-        android:id="@+id/profile_data"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_centerVertical="true"
-        android:background="@color/verde_roonner"
-        android:gravity="center"
-        android:text="24 years old and a huge soccer fan"
-        android:textSize="20sp" />
+</ListView>
 
-    <TextView
-        android:id="@+id/profile_what"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_below="@+id/profile_data"
-        android:background="@color/verde_roonner"
-        android:gravity="center"
-        android:text="wants to"
-        android:textSize="20sp" />
-
-    <TextView
-        android:id="@+id/profile_name"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="19dp"
-        android:background="@color/verde_roonner"
-        android:gravity="center"
-        android:text="Cristobal from Santiago, Chile"
-        android:textSize="20sp" />
-
-    <Button
-        android:id="@+id/profile_music"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_below="@+id/profile_what"
-        android:layout_marginTop="30dp"
-        android:background="@color/celeste_roonner"
-        android:text="@string/roon" />
-
-    <Button
-        android:id="@+id/profile_next"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_below="@+id/profile_music"
-        android:layout_marginTop="16dp"
-        android:background="@color/celeste_roonner"
-        android:text="@string/next" />
+ <Button
+     android:id="@+id/more_roonners"
+     android:layout_width="fill_parent"
+     android:layout_height="wrap_content"
+     android:layout_alignParentBottom="true"
+     android:text="@string/more_roonners"
+     ></Button>
 
 </RelativeLayout>

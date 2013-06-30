@@ -14,16 +14,19 @@
 
 	
 	<!-- Buddies -->
-	<string name="new_roonner">Find a new Roonner</string>
+	<string name="new_roonner">Find a new runner</string>
 	<string name="my_buddies">My Buddies</string>
 	<string name="options">Options</string>
 	<string name="roon">Want to Roon?</string>
 	<string name="next">Next please!</string>
+	<string name="solo">Run solo</string>
+	<string name="buddies_speech">I can help you find a \nnew runner!</string>
+	<string name="more_roonners">I can find you more!</string>
 
 	<string name="skip">Skip</string>
 	<string name="music">Music</string>
 	<string name="run">Run</string>
 	<string name="finish">Finish</string>
-	<string name="your_friends">Your Friends</string>
+	<string name="your_friends">Your Friend</string>
 
 </resources>
