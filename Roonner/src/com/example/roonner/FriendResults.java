@@ -19,6 +19,12 @@ public class FriendResults extends Activity {
 		Random random_gen= new Random();
 		int random = random_gen.nextInt(8);
 		chooseImage(random);
+		Intent intent = getIntent();
+		Bundle extras = intent.getExtras();
+		TextView name = (TextView)findViewById(R.id.friend_results_name);
+		name.setText(extras.getString("name"));
+		TextView lugar = (TextView)findViewById(R.id.friendResults_time);
+		lugar.setText(extras.getString("place")+"\n"+"Current time: 6:15PM");
 	}
 
 	@Override

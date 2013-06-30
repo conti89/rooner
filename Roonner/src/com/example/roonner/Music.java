@@ -21,7 +21,11 @@ public class Music extends Activity {
 			@Override
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
+				Intent intent = getIntent();
+				Bundle extras = intent.getExtras();
 				Intent nextIntent = new Intent(getBaseContext(),Run.class);
+				nextIntent.putExtra("name", extras.getString("name"));
+				nextIntent.putExtra("place",extras.getString("place"));
 				startActivityForResult(nextIntent, 0);
 				
 			}});

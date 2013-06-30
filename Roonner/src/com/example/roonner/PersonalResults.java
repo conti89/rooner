@@ -28,11 +28,15 @@ public class PersonalResults extends Activity {
 			@Override
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
+				Intent intent = getIntent();
+				Bundle extras = intent.getExtras();
 				Intent nextIntent = new Intent(getBaseContext(),FriendResults.class);
+				nextIntent.putExtra("name", extras.getString("name"));
+				nextIntent.putExtra("place",extras.getString("place"));
 				startActivityForResult(nextIntent, 0);
-				
+
 			}});
-	
+
 	}
 
 	@Override
@@ -41,20 +45,23 @@ public class PersonalResults extends Activity {
 		getMenuInflater().inflate(R.menu.main, menu);
 		return true;
 	}
-	
+
 	public void chooseImage(int number){
 		QuickContactBadge friend = (QuickContactBadge)findViewById(R.id.friend_results_pic);
-		if(number == 0){
-			friend.setImageResource(getResources().getIdentifier("com.example.roonner:drawable/sun" , null, null));
+		try{
+			if(number == 0){
+				friend.setImageResource(R.drawable.sun);
+			}
+			else if(number == 1){friend.setImageResource(R.drawable.cloudy);}
+			else if(number == 2){friend.setImageResource(R.drawable.light_snow);}
+			else if(number == 3){friend.setImageResource(R.drawable.rain);}
+			else if(number == 4){friend.setImageResource(R.drawable.rain2);}
+			else if(number == 5){friend.setImageResource(R.drawable.semi_sun);}
+			else if(number == 6){friend.setImageResource(R.drawable.snow);}
+			else if(number == 7){friend.setImageResource(R.drawable.thunder);}
+			else if(number == 8){friend.setImageResource(R.drawable.very_cloudy);}
 		}
-		else if(number == 1){friend.setImageResource(getResources().getIdentifier("com.example.roonner:drawable/cloudy" , null, null));}
-		else if(number == 2){friend.setImageResource(getResources().getIdentifier("com.example.roonner:drawable/light_snow" , null, null));}
-		else if(number == 3){friend.setImageResource(getResources().getIdentifier("com.example.roonner:drawable/rain" , null, null));}
-		else if(number == 4){friend.setImageResource(getResources().getIdentifier("com.example.roonner:drawable/rain2" , null, null));}
-		else if(number == 5){friend.setImageResource(getResources().getIdentifier("com.example.roonner:drawable/semi_sun" , null, null));}
-		else if(number == 6){friend.setImageResource(getResources().getIdentifier("com.example.roonner:drawable/snow" , null, null));}
-		else if(number == 7){friend.setImageResource(getResources().getIdentifier("com.example.roonner:drawable/thunder" , null, null));}
-		else if(number == 8){friend.setImageResource(getResources().getIdentifier("com.example.roonner:drawable/very_cloudy" , null, null));}
+		catch(Exception e){}
 	}
 
 }
