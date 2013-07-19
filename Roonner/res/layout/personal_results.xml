@@ -5,23 +5,21 @@
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin" >
-    
+
     <QuickContactBadge
         android:id="@+id/personal_results_pic"
         android:layout_width="120dp"
         android:layout_height="120dp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:src="@drawable/sun"
-        />
+        android:src="@drawable/sun" />
 
     <Button
         android:id="@+id/personalResults_friendResults"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="35dp"
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
-
         android:text="@string/your_friend" />
 
     <TextView
@@ -32,7 +30,9 @@
         android:layout_centerVertical="true"
         android:background="@color/verde_roonner"
         android:text="        Distance"
-        android:textSize="20sp" />
+        android:textColor="@color/blanco"
+        android:textSize="20sp"
+        android:textStyle="bold" />
 
     <TextView
         android:id="@+id/personal_results_spd_txt"
@@ -44,7 +44,9 @@
         android:layout_marginRight="35dp"
         android:background="@color/verde_roonner"
         android:text="Speed"
-        android:textSize="20sp" />
+        android:textColor="@color/blanco"
+        android:textSize="20sp"
+        android:textStyle="bold" />
 
     <TextView
         android:id="@+id/personal_results_dis"
@@ -53,8 +55,8 @@
         android:layout_alignRight="@+id/personal_results_pic"
         android:layout_below="@+id/personal_results_dis_txt"
         android:layout_marginRight="14dp"
-        android:textSize="20sp"
-        android:text="1942 mts" />
+        android:text="1942 mts"
+        android:textSize="18sp" />
 
     <TextView
         android:id="@+id/personal_results_vel"
@@ -64,7 +66,7 @@
         android:layout_alignBottom="@+id/personal_results_dis"
         android:layout_alignRight="@+id/personal_results_spd_txt"
         android:text="10 m/s"
-        android:textSize="20sp" />
+        android:textSize="18sp" />
 
     <TextView
         android:id="@+id/personal_results_dur_txt"
@@ -76,7 +78,9 @@
         android:background="@color/verde_roonner"
         android:gravity="center"
         android:text="Duration (Started at 5:39 PM)"
-        android:textSize="20sp" />
+        android:textColor="@color/blanco"
+        android:textSize="20sp"
+        android:textStyle="bold" />
 
     <TextView
         android:id="@+id/personal_results_dur"
@@ -84,29 +88,21 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/personal_results_dur_txt"
         android:layout_centerHorizontal="true"
-        android:text="01:21:53" 
-        android:textSize="20sp"/>
-
-
-    <ImageView
-        android:id="@+id/personal_map"
-        android:layout_width="match_parent"
-        android:layout_height="120dp"
-        android:layout_above="@+id/personalResults_friendResults"
-        android:layout_alignParentLeft="true"
-        android:src="@drawable/map_cristobal" />
+        android:text="01:21:53"
+        android:textSize="18sp" />
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_toRightOf="@id/personal_results_pic"
-        android:layout_above="@id/personal_results_dur_txt">"
+        android:layout_above="@id/personal_results_dur_txt"
+        android:layout_toRightOf="@id/personal_results_pic" >
+
 
         <TextView
             android:id="@+id/personal_results_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-			android:layout_centerHorizontal="true"
+            android:layout_centerHorizontal="true"
             android:text="Cristobal"
             android:textSize="40sp" />
 
@@ -118,7 +114,51 @@
             android:layout_centerHorizontal="true"
             android:gravity="center"
             android:text="Santiago,Chile \nCurrent Time: 6:15PM" />
-
     </RelativeLayout>
+
+    <TextView
+        android:id="@+id/TextView03"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/personal_results_dis_txt"
+        android:layout_below="@+id/personal_results_dis"
+        android:layout_marginTop="25dp"
+        android:background="@color/verde_roonner"
+        android:text="        Pace"
+        android:textColor="@color/blanco"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/TextView04"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/TextView03"
+        android:layout_alignBottom="@+id/TextView03"
+        android:layout_alignRight="@+id/personal_results_vel"
+        android:background="@color/verde_roonner"
+        android:text="Calories"
+        android:textColor="@color/blanco"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/TextView02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/TextView01"
+        android:layout_alignBottom="@+id/TextView01"
+        android:layout_alignRight="@+id/TextView04"
+        android:text="306 cal"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/TextView01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/personal_results_pic"
+        android:layout_below="@+id/TextView03"
+        android:text="7:00 min/km"
+        android:textSize="18sp" />
 
 </RelativeLayout>

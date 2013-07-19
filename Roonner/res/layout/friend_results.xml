@@ -15,16 +15,6 @@
         android:src="@drawable/duran" />
 
     <TextView
-        android:id="@+id/friend_results_dis_txt"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_centerVertical="true"
-        android:background="@color/verde_roonner"
-        android:text="        Distance"
-        android:textSize="20sp" />
-
-    <TextView
         android:id="@+id/friend_results_spd_txt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -34,16 +24,9 @@
         android:layout_marginRight="35dp"
         android:background="@color/verde_roonner"
         android:text="Speed"
-        android:textSize="20sp" />
-
-    <TextView
-        android:id="@+id/friend_results_dis"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignRight="@id/friend_results_pic"
-        android:layout_below="@id/friend_results_dis_txt"
-        android:layout_marginRight="14dp"
-        android:text="1942 mts"
+        android:textStyle="bold"
+        android:textColor="@color/blanco"
+        
         android:textSize="20sp" />
 
     <TextView
@@ -64,6 +47,8 @@
         android:layout_below="@id/friend_results_pic"
         android:layout_marginTop="19dp"
         android:background="@color/verde_roonner"
+        android:textColor="@color/blanco"
+        android:textStyle="bold"
         android:gravity="center"
         android:text="Duration"
         android:textSize="20sp" />
@@ -80,18 +65,10 @@
     <Button
         android:id="@+id/encourage"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="35dp"
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
         android:text="@string/encourage" />
-
-    <ImageView
-        android:id="@+id/friend_map"
-        android:layout_width="match_parent"
-        android:layout_height="120dp"
-        android:layout_above="@+id/encourage"
-        android:layout_alignParentLeft="true"
-        android:src="@drawable/map_friend" />
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -118,5 +95,50 @@
             android:text="Santiago,Chile \nCurrent Time: 6:15PM" />
 
     </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/friend_map"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_above="@+id/encourage"
+        android:layout_alignLeft="@+id/encourage"
+        android:scaleType="fitXY"
+        android:layout_marginBottom ="10dp"
+        android:src="@drawable/map_friend" />
+
+    <TextView
+        android:id="@+id/friend_results_dis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/friend_results_dur"
+        android:text="1942 mts"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/friend_results_dis_txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/friend_results_vel"
+        android:layout_alignLeft="@+id/friend_results_dur_txt"
+        android:background="@color/verde_roonner"
+        android:text="        Distance"
+        android:textColor="@color/blanco"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/friend_results_spd_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/friend_results_dis_txt"
+        android:layout_alignBottom="@id/friend_results_dis_txt"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="35dp"
+        android:background="@color/verde_roonner"
+        android:text="Speed"
+        android:textStyle="bold"
+        android:textColor="@color/blanco"
+        
+        android:textSize="20sp" />
 
 </RelativeLayout>
